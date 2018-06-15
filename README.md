@@ -25,23 +25,16 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ## Part A: Creating the VPS within Vultr
 
 ***Step 1:*** Register at [Vultr](https://www.vultr.com/?ref=7296974)
-
 ***Step 2:*** After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server
-
-***Step 3*** Choose a server location (preferably somewhere close to you)
+***Step 3:*** Choose a server location (preferably somewhere close to you)
 
 ![Example-Location](https://i.imgur.com/ozi7Bkr.png)
-***
 
-***Step 4***
-* Choose a server type: Ubuntu 16.04
+***Step 4:*** Choose a server type: Ubuntu 16.04
 ![Example-OS](https://i.imgur.com/aSMqHUK.png)
-***
 
-***Step 5***
-* Choose a server size: $5/mo will be fine 
+***Step 5:*** Choose a server size: $5/mo will be fine 
 ![Example-OS](https://i.imgur.com/UoGoHcM.png)
-***
 
 ***Step 6*** 
 * Set a Server Hostname & Label (name it whatever you want)

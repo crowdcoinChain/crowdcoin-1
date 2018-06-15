@@ -6,7 +6,7 @@ echo -e "${GREEN}do quick cleanup${NC}"
 rm $CONFIGFOLDER/sentinel.log > /dev/null 2>&1
 
 
-#apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
+apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
 cd $CONFIGFOLDER
 git clone https://github.com/crowdcoinChain/sentinelLinux.git /root/.crowdcoincore/sentinelLinux >/dev/null 2>&1
 cd $CONFIGFOLDER/sentinelLinux

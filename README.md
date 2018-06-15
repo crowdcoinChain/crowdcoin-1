@@ -123,7 +123,6 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***Step 10***
 * When prompted enter your private key and press enter
 
-![Example-installing](https://i.imgur.com/UTjCtrL.png)
 ***
 
 ***Step 11***

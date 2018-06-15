@@ -46,7 +46,7 @@ purgeOldInstallation() {
 }
 
 function install_sentinel() {
-  echo -e "${GREEN}Installing sentinel.${NC}"
+  echo -e "${GREEN}Installing sentinel${NC}"
   apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
   git clone $SENTINEL_REPO $CONFIGFOLDER/sentinelLinux >/dev/null 2>&1
   cd $CONFIGFOLDER/sentinelLinux
@@ -286,23 +286,23 @@ function important_information() {
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${PURPLE}Windows Wallet Guide. https://github.com/ronaldr1987/crowdcoin/blob/master/README.md${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${GREEN}$COIN_NAME Masternode is up and running listening on port ${NC}${PURPLE}$COIN_PORT${NC}."
- echo -e "${GREEN}Configuration file is:${NC}${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
- echo -e "${GREEN}Start:${NC}${RED}systemctl start $COIN_NAME.service${NC}"
- echo -e "${GREEN}Stop:${NC}${RED}systemctl stop $COIN_NAME.service${NC}"
- echo -e "${GREEN}Status:${NC}${RED}systemctl status $COIN_NAME.service${NC}"
- echo -e "${GREEN}VPS_IP:PORT${NC}${GREEN}$NODEIP:$COIN_PORT${NC}"
- echo -e "${GREEN}MASTERNODE GENKEY is:${NC}${PURPLE}$COINKEY${NC}"
+ echo -e "${GREEN}$COIN_NAME masternode is up and running listening on port ${NC}${PURPLE}$COIN_PORT${NC}."
+ echo -e "${GREEN}Configuration file: ${NC}${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
+ echo -e "${GREEN}Start: ${NC}${RED}systemctl start $COIN_NAME.service${NC}"
+ echo -e "${GREEN}Stop: ${NC}${RED}systemctl stop $COIN_NAME.service${NC}"
+ echo -e "${GREEN}Status: ${NC}${RED}systemctl status $COIN_NAME.service${NC}"
+ echo -e "${GREEN}VPS_IP:PORT ${NC}${PURPLE}$NODEIP:$COIN_PORT${NC}"
+ echo -e "${GREEN}MASTERNODE GENKEY:${NC}${PURPLE}$COINKEY${NC}"
  if [[ -n $SENTINEL_REPO  ]]; then
- echo -e "${RED}Sentinel${NC} is installed in ${RED}$CONFIGFOLDER/sentinelLinux${NC}"
- echo -e "Sentinel logs is: ${RED}$CONFIGFOLDER/sentinel.log${NC}"
+ echo -e "Sentinel folder: ${RED}$CONFIGFOLDER/sentinelLinux${NC}"
+ echo -e "Sentinel logfile: ${RED}$CONFIGFOLDER/sentinel.log${NC}"
  fi
  echo -e "${BLUE}================================================================================================================================"
  echo -e "${CYAN}Follow twitter to stay updated.  https://twitter.com/${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${CYAN}Ensure Node is fully SYNCED with BLOCKCHAIN.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${GREEN}Usage Commands.${NC}"
+ echo -e "${GREEN}Usage Commands:${NC}"
  echo -e "${GREEN}crowdcoin-cli masternode status${NC}"
  echo -e "${GREEN}crowdcoin-cli getinfo.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"

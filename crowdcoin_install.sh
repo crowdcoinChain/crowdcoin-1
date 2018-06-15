@@ -305,8 +305,7 @@ function important_information() {
  echo -e "${GREEN}crowdcoin-cli masternode status${NC}"
  echo -e "${GREEN}crowdcoin-cli getinfo.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${RED}Donations:${NC}"
- echo -e "${YELLOW}CRC: CV8WdSZKp4rcTUxMLoPg8WcS1PdqEjgREV${NC}"
+ echo -e "${YELLOW}DONATION (CRC): CV8WdSZKp4rcTUxMLoPg8WcS1PdqEjgREV${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 }
 

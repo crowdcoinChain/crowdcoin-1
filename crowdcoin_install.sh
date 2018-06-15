@@ -1,13 +1,13 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='sparks.conf'
-CONFIGFOLDER='/root/.sparkscore'
-COIN_DAEMON='sparksd'
+CONFIG_FILE='crowdcoin.conf'
+CONFIGFOLDER='/root/.crowdcoincore'
+COIN_DAEMON='crowdcoind'
 COIN_VERSION='v0.12.3.2'
-COIN_CLI='sparks-cli'
+COIN_CLI='crowdcoin-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/SparksReborn/sparkspay.git'
+COIN_REPO='https://github.com/crowdcoinChain/Crowdcoin.git'
 COIN_TGZ='https://github.com/SparksReborn/sparkspay/releases/download/v0.12.3.2/sparkscore-0.12.3.2-linux64.tar.gz'
 COIN_BOOTSTRAP='https://github.com/SparksReborn/sparkspay/releases/download/bootstrap/bootstrap.dat'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')

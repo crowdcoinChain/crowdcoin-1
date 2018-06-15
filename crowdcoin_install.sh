@@ -4,17 +4,17 @@ TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='crowdcoin.conf'
 CONFIGFOLDER='/root/.crowdcoincore'
 COIN_DAEMON='crowdcoind'
-COIN_VERSION='v0.12.3.2'
+COIN_VERSION='v1.1.0'
 COIN_CLI='crowdcoin-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/crowdcoinChain/Crowdcoin.git'
 COIN_TGZ='https://github.com/SparksReborn/sparkspay/releases/download/v0.12.3.2/sparkscore-0.12.3.2-linux64.tar.gz'
 COIN_BOOTSTRAP='https://github.com/SparksReborn/sparkspay/releases/download/bootstrap/bootstrap.dat'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-SENTINEL_REPO='https://github.com/SparksReborn/sentinel.git'
-COIN_NAME='sparks'
-COIN_PORT=8890
-RPC_PORT=8818
+SENTINEL_REPO='https://github.com/crowdcoinChain/sentinelLinux.git'
+COIN_NAME='crowdcoin'
+COIN_PORT=12875
+RPC_PORT=11998
 
 NODEIP=$(curl -s4 icanhazip.com)
 

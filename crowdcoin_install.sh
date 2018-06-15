@@ -133,6 +133,11 @@ discover=1
 EOF
 }
 
+function grab_bootstrap() {
+cd $CONFIGFOLDER
+  wget -q $COIN_BOOTSTRAP
+}
+
 function create_key() {
   echo -e "${YELLOW}Enter your ${RED}$COIN_NAME Masternode GEN Key${NC}."
   read -e COINKEY
@@ -311,6 +316,7 @@ function setup_node() {
   create_key
   update_config
   enable_firewall
+  #grab_bootstrap
   install_sentinel
   important_information
   configure_systemd

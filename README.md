@@ -26,11 +26,9 @@ Your local wallet is not required to be kept open and you can store it as a cold
 
 ***Step 1:*** Register at [Vultr](https://www.vultr.com/?ref=7296974)
 
-***Step 2***
-* After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server
+***Step 2:*** After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server
 
-***Step 3*** 
-* Choose a server location (preferably somewhere close to you)
+***Step 3*** Choose a server location (preferably somewhere close to you)
 
 ![Example-Location](https://i.imgur.com/ozi7Bkr.png)
 ***

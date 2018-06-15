@@ -118,7 +118,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***Step 10***
-* When prompted to enter your private key - press enter
+* When prompted enter your private key and press enter
 
 ![Example-installing](https://i.imgur.com/UTjCtrL.png)
 ***
@@ -126,7 +126,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***Step 11***
 * You will now see all of the relavant information for your server.
 * Keep this terminal open as we will need the info for the wallet setup.
-![Example-installing](https://i.imgur.com/P0PLUeq.png)
 ***
 
 ## Section D: Preparing the Local wallet
@@ -146,7 +145,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***step 4***
 * Go to the console within the wallet 
 
-![Example-console](https://i.imgur.com/rumxdpO.png)
 ***
 
 ***Step 5***
@@ -154,7 +152,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 `masternode outputs` 
 
-![Example-outputs](https://i.imgur.com/LNBjk1Q.png)
 ***
 
 ***Step 6***
@@ -166,7 +163,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ***Step 1***
 * Go to the tools tab within the wallet and click open "masternode configuration file" 
-![Example-create](https://i.imgur.com/2vozmrA.png)
 ***
 
 ***Step 2***
@@ -177,7 +173,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 * The `PrivKey` is your masternode Gen key (This is also in the Bitvise terminal that you have open).
 * The `TxHash` is the transaction ID/long key that you copied to the text file.
 * The `Output Index` is the 0 or 1 that you copied to your text file.
-![Example-create](https://i.imgur.com/CP7TjlL.png)
 
 Click "File Save"
 ***

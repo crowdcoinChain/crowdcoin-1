@@ -30,6 +30,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 
 ***Step 3:*** Choose a server location (preferably somewhere close to you)
 
+
 ![Example-Location](https://i.imgur.com/ozi7Bkr.png)
 
 ***Step 4:*** Choose a server type: Ubuntu 16.04

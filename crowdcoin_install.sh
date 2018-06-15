@@ -325,7 +325,6 @@ function setup_node() {
   configure_systemd
 }
 
-
 ##### Main #####
 clear
 

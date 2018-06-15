@@ -1,8 +1,8 @@
 ![Example-Logo](https://crowdcoin.site/img/logo-dark.png)
 # Crowdcoin Masternode Setup Guide (Ubuntu 16.04)
-This guide will assist you in setting up a Sparks Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
+This guide will assist you in setting up a Crowdcoin Masternode on a Linux Server running Ubuntu 16.04.
 
-If you require further assistance contact the support team @ [Discord](https://discord.gg/WacZZWb)
+If you require further assistance contact the support team @ [Discord](https://discord.gg/9ya5SWt)
 ***
 ## Requirements
 1) **1,000 CRC.**

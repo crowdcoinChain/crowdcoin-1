@@ -140,7 +140,7 @@ cd $CONFIGFOLDER
 }
 
 function create_key() {
-  echo -e "${YELLOW}Enter your ${RED}$COIN_NAME Masternode GEN Key${NC}."
+  echo -e "${YELLOW}Enter your ${RED}$COIN_NAME masternode genkey${NC}."
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
   $COIN_PATH$COIN_DAEMON -daemon

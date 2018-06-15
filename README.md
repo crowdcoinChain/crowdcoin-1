@@ -5,7 +5,7 @@ This guide will assist you in setting up a Sparks Masternode on a Linux Server r
 If you require further assistance contact the support team @ [Discord](https://discord.gg/WacZZWb)
 ***
 ## Requirements
-1) **1,000 Sparks coins.**
+1) **1,000 CRC.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**

@@ -8,7 +8,8 @@ COIN_VERSION='v1.1.0'
 COIN_CLI='crowdcoin-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/crowdcoinChain/Crowdcoin.git'
-COIN_TGZ='https://github.com/SparksReborn/sparkspay/releases/download/v0.12.3.2/sparkscore-0.12.3.2-linux64.tar.gz'
+COIN_TGZ='https://github.com/crowdcoinChain/Crowdcoin/releases/download/1.1.0/Crowdcoin_command_line_binaries_linux_1.1.tar.gz'
+COIN_BINDIR='~/Crowdcoin_command_line_binaries_linux_1.1'
 COIN_BOOTSTRAP='https://github.com/SparksReborn/sparkspay/releases/download/bootstrap/bootstrap.dat'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 SENTINEL_REPO='https://github.com/crowdcoinChain/sentinelLinux.git'
@@ -33,25 +34,26 @@ purgeOldInstallation() {
     systemctl stop $COIN_NAME.service > /dev/null 2>&1
     sudo killall $COIN_DAEMON > /dev/null 2>&1
     #remove old ufw port allow
-    sudo ufw delete allow 8890/tcp > /dev/null 2>&1
+    sudo ufw delete allow 12875/tcp > /dev/null 2>&1
     #remove old files
 	rm /root/$CONFIGFOLDER/bootstrap.dat.old > /dev/null 2>&1
 	cd /usr/local/bin && sudo rm $COIN_CLI $COIN_DAEMON > /dev/null 2>&1 && cd
     cd /usr/bin && sudo rm $COIN_CLI $COIN_DAEMON > /dev/null 2>&1 && cd
         sudo rm -rf ~/$CONFIGFOLDER > /dev/null 2>&1
-    #remove binaries and Sparks utilities
-    cd /usr/local/bin && sudo rm sparks-cli sparks-tx sparksd > /dev/null 2>&1 && cd
+    #remove binaries and Crowdcoin utilities
+    cd /usr/local/bin && sudo rm crowdcoin-cli crowdcoin-tx crowdcoind > /dev/null 2>&1 && cd
     echo -e "${GREEN}* Done${NONE}";
 }
 
 function install_sentinel() {
   echo -e "${GREEN}Installing sentinel.${NC}"
   apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
-  git clone $SENTINEL_REPO $CONFIGFOLDER/sentinel >/dev/null 2>&1
-  cd $CONFIGFOLDER/sentinel
+  git clone $SENTINEL_REPO $CONFIGFOLDER/sentinelLinux >/dev/null 2>&1
+  cd $CONFIGFOLDER/sentinelLinux
+  export LC_ALL=C
   virtualenv ./venv >/dev/null 2>&1
   ./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
-  echo  "* * * * * cd $CONFIGFOLDER/sentinel && ./venv/bin/python bin/sentinel.py >> $CONFIGFOLDER/sentinel.log 2>&1" > $CONFIGFOLDER/$COIN_NAME.cron
+  echo  "* * * * * cd $CONFIGFOLDER/sentinelLinux && ./venv/bin/python bin/sentinel.py >> $CONFIGFOLDER/sentinel.log 2>&1" > $CONFIGFOLDER/$COIN_NAME.cron
   crontab $CONFIGFOLDER/$COIN_NAME.cron
   rm $CONFIGFOLDER/$COIN_NAME.cron >/dev/null 2>&1
 }
@@ -62,7 +64,7 @@ function download_node() {
   wget -q $COIN_TGZ
   compile_error
   tar xvzf $COIN_ZIP >/dev/null 2>&1
-  cd sparkscore-0.12.3/bin
+  cd $COIN_BINDIR
   chmod +x $COIN_DAEMON $COIN_CLI
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd ~ >/dev/null 2>&1
@@ -119,17 +121,16 @@ function create_config() {
 rpcuser=$RPCUSER
 rpcpassword=$RPCPASSWORD
 rpcport=$RPC_PORT
+rpcthreads=8
+rpcbind=127.0.0.1
 rpcallowip=127.0.0.1
 listen=1
 server=1
 daemon=1
 port=$COIN_PORT
+staking=0
+discover=1
 EOF
-}
-
-function grab_bootstrap() {
-cd $CONFIGFOLDER
-  wget -q $COIN_BOOTSTRAP
 }
 
 function create_key() {
@@ -165,6 +166,19 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #ADDNODES
+addnode=96.126.124.245
+addnode=121.200.4.203
+addnode=188.165.52.69
+addnode=207.148.121.239
+addnode=84.17.23.43:12875
+addnode=18.220.138.90:12875
+addnode=86.57.164.166:12875
+addnode=86.57.164.146:12875
+addnode=18.217.78.145:12875
+addnode=23.92.30.230:12875
+addnode=35.190.182.68:12875
+addnode=80.209.236.4:12875
+addnode=91.201.40.89:12875 
 
 EOF
 }
@@ -240,10 +254,11 @@ echo -e "${PURPLE}Adding bitcoin PPA repository"
 apt-add-repository -y ppa:bitcoin/bitcoin >/dev/null 2>&1
 echo -e "Installing required packages, it may take some time to finish.${NC}"
 apt-get update >/dev/null 2>&1
+apt-get install pwgen -y >/dev/null 2>&1
 apt-get install libzmq3-dev -y >/dev/null 2>&1
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" make software-properties-common \
-build-essential libtool autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev libboost-program-options-dev \
-libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git wget curl libdb4.8-dev bsdmainutils libdb4.8++-dev \
+build-essential libtool autotools-dev autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev libboost-program-options-dev \
+libboost-system-dev libboost-test-dev libboost-thread-dev libboost-all-dev sudo automake git wget curl libdb4.8-dev bsdmainutils libdb4.8++-dev \
 libminiupnpc-dev libgmp3-dev ufw pkg-config libevent-dev  libdb5.3++ unzip libzmq5 >/dev/null 2>&1
 if [ "$?" -gt "0" ];
   then
@@ -252,8 +267,8 @@ if [ "$?" -gt "0" ];
     echo "apt -y install software-properties-common"
     echo "apt-add-repository -y ppa:bitcoin/bitcoin"
     echo "apt-get update"
-    echo "apt install -y make build-essential libtool software-properties-common autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev \
-libboost-program-options-dev libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git curl libdb4.8-dev \
+    echo "apt install -y make build-essential libtool autotools-dev software-properties-common autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev \
+libboost-program-options-dev libboost-system-dev libboost-test-dev libboost-thread-dev libboost-all-dev sudo automake git curl libdb4.8-dev \
 bsdmainutils libdb4.8++-dev libminiupnpc-dev libgmp3-dev ufw pkg-config libevent-dev libdb5.3++ unzip libzmq5"
  exit 1
 fi
@@ -263,7 +278,7 @@ clear
 function important_information() {
  echo
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${PURPLE}Windows Wallet Guide. https://github.com/Sparks/master/README.md${NC}"
+ echo -e "${PURPLE}Windows Wallet Guide. https://github.com/ronaldr1987/crowdcoin/blob/master/README.md${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}$COIN_NAME Masternode is up and running listening on port${NC}${PURPLE}$COIN_PORT${NC}."
  echo -e "${GREEN}Configuration file is:${NC}${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
@@ -272,21 +287,21 @@ function important_information() {
  echo -e "${GREEN}VPS_IP:PORT${NC}${GREEN}$NODEIP:$COIN_PORT${NC}"
  echo -e "${GREEN}MASTERNODE GENKEY is:${NC}${PURPLE}$COINKEY${NC}"
  if [[ -n $SENTINEL_REPO  ]]; then
- echo -e "${RED}Sentinel${NC} is installed in ${RED}/root/sentinel_$COIN_NAME${NC}"
+ echo -e "${RED}Sentinel${NC} is installed in ${RED}$CONFIGFOLDER/sentinelLinux${NC}"
  echo -e "Sentinel logs is: ${RED}$CONFIGFOLDER/sentinel.log${NC}"
  fi
  echo -e "${BLUE}================================================================================================================================"
- echo -e "${CYAN}Follow twitter to stay updated.  https://twitter.com/Real_Bit_Yoda${NC}"
+ echo -e "${CYAN}Follow twitter to stay updated.  https://twitter.com/${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${CYAN}Ensure Node is fully SYNCED with BLOCKCHAIN.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}Usage Commands.${NC}"
- echo -e "${GREEN}sparks-cli masternode status${NC}"
- echo -e "${GREEN}sparks-cli getinfo.${NC}"
+ echo -e "${GREEN}crowdcoin-cli masternode status${NC}"
+ echo -e "${GREEN}crowdcoin-cli getinfo.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${RED}Donations always excepted gratefully.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${YELLOW}Spks: GPMVqCBk4KXXC2n2HMeqtYqjTKZwTZYqy2${NC}"
+ echo -e "${YELLOW}CRC: 123456${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 }
 
@@ -296,7 +311,6 @@ function setup_node() {
   create_key
   update_config
   enable_firewall
-  grab_bootstrap
   install_sentinel
   important_information
   configure_systemd

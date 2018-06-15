@@ -111,8 +111,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 `bash crowdcoin_install.sh`
 
-![Example-Bash](https://i.imgur.com/5DAJNbd.png)
-
 ***
 
 ***Step 9***

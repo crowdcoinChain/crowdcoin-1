@@ -305,7 +305,6 @@ function important_information() {
  echo -e "Select your masternode and hit start-alias to start your masternode"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "To monitor, run the following commands on your vps:"
- echo -e "${BLUE}${NC}"
  echo -e "${RED}crowdcoin-cli masternode status${NC}"
  echo -e "${RED}crowdcoin-cli getinfo${NC}"
  echo -e "${RED}crowdcoin-cli mnsync status${NC}"

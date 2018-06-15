@@ -11,7 +11,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 1) **1,000 CRC.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
-4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or [Putty](https://putty.org)**
+4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or [Putty](https://dl.bitvise.com/BvSshClient-Inst.exe)**
 ***
 ## Contents
 * **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).

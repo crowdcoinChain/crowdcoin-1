@@ -103,13 +103,13 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/K6xlnav.png)
 
-`wget -q https://raw.githubusercontent.com/SparksReborn/SparksMasternodeInstall/master/sparks_install.sh`
+`wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
 ***
 
 ***Step 8***
 * Paste the code below into the Bitvise terminal then press enter
 
-`bash sparks_install.sh`
+`bash crowdcoin_install.sh`
 
 ![Example-Bash](https://i.imgur.com/5DAJNbd.png)
 
@@ -134,11 +134,11 @@ If you require further assistance contact the support team @ [Discord](https://d
 ## Section D: Preparing the Local wallet
 
 ***Step 1***
-* Download and install the Sparks wallet [here](https://github.com/SparksReborn/sparkspay/releases)
+* Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
 ***
 
 ***Step 2***
-* Send EXACLY 1,000 SPK to a receive address within your wallet.
+* Send EXACLY 1,000 CRC to a receive address within your wallet.
 ***
 
 ***Step 3***
@@ -193,7 +193,7 @@ Click "File Save"
 ***step 4***
 * Check the status of your masternode within the VPS by using the command below:
 
-`sparks-cli masternode status`
+`crowdcoin-cli masternode status`
 
 *You should see ***status 9***
 

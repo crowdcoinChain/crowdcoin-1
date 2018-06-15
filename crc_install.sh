@@ -60,7 +60,7 @@ function install_sentinel() {
 }
 
 function download_node() {
-  echo -e "${GREEN}Downloading and Installing $COIN_NAME daemon${NC}"
+  echo -e "${GREEN}Downloading and installing $COIN_NAME daemon${NC}"
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error

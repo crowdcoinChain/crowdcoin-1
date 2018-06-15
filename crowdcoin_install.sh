@@ -287,12 +287,13 @@ function important_information() {
  echo -e "${PURPLE}Windows Wallet Guide. https://github.com/ronaldr1987/crowdcoin/blob/master/README.md${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}$COIN_NAME masternode is up and running and listening on port ${NC}${PURPLE}$COIN_PORT${NC}."
- echo -e "${GREEN}Configuration file: ${NC}${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
+ echo -e 
  echo -e "${GREEN}Start: ${NC}${RED}systemctl start $COIN_NAME.service${NC}"
  echo -e "${GREEN}Stop: ${NC}${RED}systemctl stop $COIN_NAME.service${NC}"
  echo -e "${GREEN}Status: ${NC}${RED}systemctl status $COIN_NAME.service${NC}"
  echo -e "${GREEN}VPS_IP:PORT ${NC}${PURPLE}$NODEIP:$COIN_PORT${NC}"
  echo -e "${GREEN}MASTERNODE GENKEY: ${NC}${PURPLE}$COINKEY${NC}"
+ echo -e "${GREEN}Configuration file: ${NC}${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
  if [[ -n $SENTINEL_REPO  ]]; then
  echo -e "Sentinel folder: ${RED}$CONFIGFOLDER/sentinelLinux${NC}"
  echo -e "Sentinel logfile: ${RED}$CONFIGFOLDER/sentinel.log${NC}"

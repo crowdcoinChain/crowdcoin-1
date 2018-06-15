@@ -283,7 +283,7 @@ function important_information() {
  clear
  echo
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${CYAN}Windows Wallet Guide: https://github.com/ronaldr1987/crowdcoin/blob/master/README.md${NC}"
+ echo -e "${CYAN}Guide: https://github.com/ronaldr1987/crowdcoin/blob/master/README.md${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${RED}$COIN_NAME${NC} masternode is up and running and listening on port ${PURPLE}$COIN_PORT${NC}."
  echo -e "${BLUE}${NC}"
@@ -300,11 +300,12 @@ function important_information() {
  echo -e "${GREEN}MASTERNODE GENKEY: ${NC}${PURPLE}$COINKEY${NC}"
  echo -e "${BLUE}${NC}"
  echo -e "When synced, on your Windows wallet, create masternode.conf file"
- echo -e "Enter the following line:{PURPLE}<ALIAS> $NODEIP:$COIN_PORT $COINKEY <TX> <ID>${NC}"
+ echo -e "Enter the following line: ${PURPLE}<ALIAS> $NODEIP:$COIN_PORT $COINKEY <TX> <ID>${NC}"
  echo -e "Then restart your Windows Wallet, you should see your masternode in the masternode tab"
  echo -e "Select your masternode and hit start-alias to start your masternode"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "To monitor, run the following commands on your vps:"
+ echo -e "${BLUE}${NC}"
  echo -e "${RED}crowdcoin-cli masternode status${NC}"
  echo -e "${RED}crowdcoin-cli getinfo${NC}"
  echo -e "${RED}crowdcoin-cli mnsync status${NC}"

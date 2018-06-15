@@ -190,7 +190,7 @@ EOF
 
 
 function enable_firewall() {
-  echo -e "Installing and setting up firewall to allow ingress on port ${GREEN}$COIN_PORT${NC}"
+  echo -e "Installing and setting up firewall to allow port ${GREEN}$COIN_PORT${NC}"
   ufw allow $COIN_PORT/tcp comment "$COIN_NAME MN port" >/dev/null
   ufw allow ssh comment "SSH" >/dev/null 2>&1
   ufw limit ssh/tcp >/dev/null 2>&1
@@ -281,17 +281,18 @@ clear
 }
 
 function important_information() {
+ clear
  echo
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${PURPLE}Windows Wallet Guide. https://github.com/ronaldr1987/crowdcoin/blob/master/README.md${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${GREEN}$COIN_NAME masternode is up and running listening on port ${NC}${PURPLE}$COIN_PORT${NC}."
+ echo -e "${GREEN}$COIN_NAME masternode is up and running and listening on port ${NC}${PURPLE}$COIN_PORT${NC}."
  echo -e "${GREEN}Configuration file: ${NC}${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
  echo -e "${GREEN}Start: ${NC}${RED}systemctl start $COIN_NAME.service${NC}"
  echo -e "${GREEN}Stop: ${NC}${RED}systemctl stop $COIN_NAME.service${NC}"
  echo -e "${GREEN}Status: ${NC}${RED}systemctl status $COIN_NAME.service${NC}"
  echo -e "${GREEN}VPS_IP:PORT ${NC}${PURPLE}$NODEIP:$COIN_PORT${NC}"
- echo -e "${GREEN}MASTERNODE GENKEY:${NC}${PURPLE}$COINKEY${NC}"
+ echo -e "${GREEN}MASTERNODE GENKEY: ${NC}${PURPLE}$COINKEY${NC}"
  if [[ -n $SENTINEL_REPO  ]]; then
  echo -e "Sentinel folder: ${RED}$CONFIGFOLDER/sentinelLinux${NC}"
  echo -e "Sentinel logfile: ${RED}$CONFIGFOLDER/sentinel.log${NC}"
@@ -301,12 +302,11 @@ function important_information() {
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${CYAN}Ensure Node is fully SYNCED with BLOCKCHAIN.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${GREEN}Usage Commands:${NC}"
+ echo -e "${GREEN}To monitor, run the following command on your vps:${NC}"
  echo -e "${GREEN}crowdcoin-cli masternode status${NC}"
  echo -e "${GREEN}crowdcoin-cli getinfo.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${RED}Donations always excepted gratefully.${NC}"
- echo -e "${BLUE}================================================================================================================================${NC}"
+ echo -e "${RED}Donations:${NC}"
  echo -e "${YELLOW}CRC: CV8WdSZKp4rcTUxMLoPg8WcS1PdqEjgREV${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 }

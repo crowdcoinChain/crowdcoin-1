@@ -29,6 +29,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ***Step 3*** 
 * Choose a server location (preferably somewhere close to you)
+
 ![Example-Location](https://i.imgur.com/ozi7Bkr.png)
 ***
 

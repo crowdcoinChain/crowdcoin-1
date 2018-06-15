@@ -303,6 +303,7 @@ function important_information() {
  echo -e "Enter the following line: ${PURPLE}<ALIAS> $NODEIP:$COIN_PORT $COINKEY <TX> <ID>${NC}"
  echo -e "Then restart your Windows Wallet, you should see your masternode in the masternode tab"
  echo -e "Select your masternode and hit start-alias to start your masternode"
+ echo -e "${BLUE}${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "To monitor, run the following commands on your vps:"
  echo -e "${RED}crowdcoin-cli masternode status${NC}"

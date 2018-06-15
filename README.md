@@ -14,7 +14,6 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * **Section C**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Section D**: Preparing the local wallet.
 * **Section E**: Connecting & Starting the masternode.
-***
 
 ***
 ## Requirements

@@ -8,7 +8,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 
 ***
 ## Table of contents
-* **[Requirements](#requirements)**
+* **Requirements**
 * **Part A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
 * **Part B**: Downloading and installing Bitvise.
 * **Part C**: Connecting to the VPS and installing the MN script via Bitvise.

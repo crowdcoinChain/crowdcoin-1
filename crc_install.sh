@@ -42,7 +42,6 @@ purgeOldInstallation() {
         sudo rm -rf ~/$CONFIGFOLDER > /dev/null 2>&1
     #remove binaries and Crowdcoin utilities
     cd /usr/local/bin && sudo rm crowdcoin-cli crowdcoin-tx crowdcoind > /dev/null 2>&1 && cd
-    echo -e "${GREEN}* Done${NONE}";
 }
 
 function install_sentinel() {
@@ -140,7 +139,7 @@ cd $CONFIGFOLDER
 }
 
 function create_key() {
-  echo -e "${YELLOW}Enter your $COIN_NAME masternode genkey:"
+  echo -e "${YELLOW}Enter your ${RED}$COIN_NAME masternode genkey${NC}:"
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
   $COIN_PATH$COIN_DAEMON -daemon

@@ -8,7 +8,7 @@ rm $CONFIGFOLDER/sentinel.log > /dev/null 2>&1
 
 #apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
 cd $CONFIGFOLDER
-git clone https://github.com/SparksReborn/sentinel.git /root/.crowdcoincore/sentinelLinux >/dev/null 2>&1
+git clone https://github.com/crowdcoinChain/sentinelLinux.git /root/.crowdcoincore/sentinelLinux >/dev/null 2>&1
 cd $CONFIGFOLDER/sentinelLinux
 virtualenv ./venv >/dev/null 2>&1
 ./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
@@ -20,7 +20,7 @@ cat << EOF > $CONFIGFOLDER/sentinel/sentinel.conf
 # specify path to dash.conf or leave blank
 # default is the same as DashCore
 #dash_conf=/root/.crowdcoincore/crowdcoin.conf
-crowd_conf=/root/.crowdcoincore/crowdcoin.conf1
+crowd_conf=/root/.crowdcoincore/crowdcoin.conf
 
 # valid options are mainnet, testnet (default=mainnet)
 network=mainnet

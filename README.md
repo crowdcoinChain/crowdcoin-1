@@ -31,6 +31,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 Download the Crowdcoin wallet from our [Official website](https://crowdcoin.site) or [Github](https://github.com/crowdcoinChain/Crowdcoin/releases)
 
 ***Step 2: Start the Crowdcoin wallet*** 
+
 Start the Crowdcoin wallet.
 
 :exclamation: The default directory where your data and wallet.dat will be stored is `C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`

@@ -23,6 +23,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or **[Putty](https://putty.org)**
 
+***
 ## Part A: Creating the VPS within Vultr
 
 ***Step 1:*** Register at [Vultr](https://www.vultr.com/?ref=7296974)

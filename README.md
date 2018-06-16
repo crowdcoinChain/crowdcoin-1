@@ -125,7 +125,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * Keep this terminal open as we will need the info for the wallet setup.
 ***
 
-## Part D: Preparing the Local wallet
+### Part D: Preparing the Local wallet
 
 ***Step 1:*** 
 * Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
@@ -136,7 +136,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***Step 3:*** 
 * Create a text document to temporarily store information that you will need. 
 
-***step 4:*** 
+***Step 4:*** 
 * Go to the console within the wallet 
 
 ***Step 5:*** 

@@ -24,7 +24,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or **[Putty](https://putty.org)**
 
 ***
-### Part D: Preparing the Local wallet
+### Part A: Preparing the Local wallet
 
 ***Step 1:*** 
 * Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
@@ -45,10 +45,10 @@ Your local wallet is not required to be kept open and you can store it as a cold
 
 ***Step 6:*** 
 * Copy the long key (this is your transaction ID) and the 1 or 2 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them in the next step.
+* Paste these into the text document you created earlier as you will need them in ***Part E: Connecting & Starting the masternode***
 ***
 
-### Part A: Creating the VPS within Vultr
+### Part B: Creating the VPS within Vultr
 
 ***Step 1:*** 
 * Register at [Vultr](https://www.vultr.com/?ref=7296974)
@@ -83,7 +83,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***
 
 
-### Part B: Downloading and installing BitVise. 
+### Part C: Downloading and installing BitVise. 
 
 ***Step 1:***
 * Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
@@ -95,7 +95,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***
 
 
-### Part C: Connecting to the VPS & Installing the MN script via Bitvise.
+### Part D: Connecting to the VPS & Installing the MN script via Bitvise.
 
 ***Step 1***
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 

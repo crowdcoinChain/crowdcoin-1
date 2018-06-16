@@ -32,7 +32,7 @@ Download the Crowdcoin wallet from our [Official website](https://crowdcoin.site
 
 ***Step 2: Start the Crowdcoin wallet*** 
 
-Start the Crowdcoin wallet.
+Start the Crowdcoin wallet !
 
 :exclamation: The default directory where your data and wallet.dat will be stored is `C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`
 

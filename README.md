@@ -10,10 +10,10 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***
 ### Table of contents
 * **Requirements**
-* **Part A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
-* **Part B**: Downloading and installing Bitvise.
-* **Part C**: Connecting to the VPS and installing the MN script via Bitvise.
-* **Part D**: Preparing the local wallet.
+* **Part A**: Preparing the local wallet.
+* **Part B**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
+* **Part C**: Downloading and installing Bitvise.
+* **Part D**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Part E**: Connecting & Starting the masternode.
 
 ***
@@ -24,6 +24,30 @@ Your local wallet is not required to be kept open and you can store it as a cold
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or **[Putty](https://putty.org)**
 
 ***
+### Part D: Preparing the Local wallet
+
+***Step 1:*** 
+* Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
+
+***Step 2:*** 
+* Send EXACLY 1,000 CRC to a receive address within your wallet.
+
+***Step 3:*** 
+* Create a text document to temporarily store information that you will need. 
+
+***Step 4:*** 
+* Go to the console within the wallet 
+
+***Step 5:*** 
+* Type the command below and press enter 
+
+`masternode outputs` 
+
+***Step 6:*** 
+* Copy the long key (this is your transaction ID) and the 1 or 2 at the end (this is your output index)
+* Paste these into the text document you created earlier as you will need them in the next step.
+***
+
 ### Part A: Creating the VPS within Vultr
 
 ***Step 1:*** 
@@ -128,30 +152,6 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***Step 11***
 * You will now see all of the relavant information for your server.
 * Keep this terminal open as we will need the info for the wallet setup.
-***
-
-### Part D: Preparing the Local wallet
-
-***Step 1:*** 
-* Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
-
-***Step 2:*** 
-* Send EXACLY 1,000 CRC to a receive address within your wallet.
-
-***Step 3:*** 
-* Create a text document to temporarily store information that you will need. 
-
-***Step 4:*** 
-* Go to the console within the wallet 
-
-***Step 5:*** 
-* Type the command below and press enter 
-
-`masternode outputs` 
-
-***Step 6:*** 
-* Copy the long key (this is your transaction ID) and the 1 or 2 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them in the next step.
 ***
 
 ### Part E: Connecting & Starting the masternode 

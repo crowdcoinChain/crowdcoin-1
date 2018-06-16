@@ -46,14 +46,8 @@ In the debug console type `masternode genkey` in order to generate a unique mast
 Run this command multiple times if you are intending to run multiple masternodes. Record these details for later use. 
 
 ***Step 5:*** 
-* Type the command below and press enter 
 
-`masternode outputs` 
-
-***Step 6:*** 
-* Copy the long key (this is your transaction ID) and the 1 or 2 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them later.
-***
+The transaction and output ID from the deposit you made into your masternode public address will need to be added to the masternode configuration file later on. Fetching this information now will make things a bit easier when we reach that stage. To get the transaction and output ID, go to `Help -> Debug window -> Console`. In the debug console type `masternode outputs` and the transaction and output ID will be displayed. Record these details for later use.
 
 ### Part B: Creating the VPS within Vultr
 

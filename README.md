@@ -45,7 +45,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 
 ***Step 6:*** 
 * Copy the long key (this is your transaction ID) and the 1 or 2 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them in ***Part E: Connecting & Starting the masternode***
+* Paste these into the text document you created earlier as you will need them in **Part E: Connecting & Starting the masternode**
 ***
 
 ### Part B: Creating the VPS within Vultr

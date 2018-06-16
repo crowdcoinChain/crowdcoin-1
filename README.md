@@ -8,7 +8,7 @@ This tutorial will guide you through the steps necessary to setup a Crowdcoin Ma
 Your local wallet is not required to be kept open and you can store it as a cold wallet whilst still collecting masternode payments. Whilst there are other ways to setup masternodes, this is by far the most secure and is highly recommended.
 
 ***
-## Table of contents
+### Table of contents
 * **Requirements**
 * **Part A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
 * **Part B**: Downloading and installing Bitvise.
@@ -17,14 +17,14 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * **Part E**: Connecting & Starting the masternode.
 
 ***
-## Requirements
+### Requirements
 1) **1,000 CRC.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or **[Putty](https://putty.org)**
 
 ***
-## Part A: Creating the VPS within Vultr
+### Part A: Creating the VPS within Vultr
 
 ***Step 1:*** Register at [Vultr](https://www.vultr.com/?ref=7296974)
 
@@ -53,7 +53,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***
 
 
-## Part B: Downloading and installing BitVise. 
+### Part B: Downloading and installing BitVise. 
 
 ***Step 1***
 * Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
@@ -66,7 +66,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***
 
 
-## Part C: Connecting to the VPS & Installing the MN script via Bitvise.
+### Part C: Connecting to the VPS & Installing the MN script via Bitvise.
 
 ***Step 1***
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
@@ -149,7 +149,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * Paste these into the text document you created earlier as you will need them in the next step.
 ***
 
-# Part E: Connecting & Starting the masternode 
+### Part E: Connecting & Starting the masternode 
 
 ***Step 1***
 * Go to the tools tab within the wallet and click open "masternode configuration file" 

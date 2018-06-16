@@ -27,7 +27,8 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ### Part A: Preparing the Local wallet
 
 ***Step 1: Download and install the Crowdcoin wallet*** 
-* Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
+
+Download and install the Crowdcoin wallet [here](https://github.com/crowdcoinChain/Crowdcoin/releases)
 
 ***Step 2: Create masternode public address*** 
 

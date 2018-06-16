@@ -54,6 +54,7 @@ To allow your remote masternode to start you need to send 1,000 CRC to each mast
 
 The transaction and output ID from the deposit you made into your masternode public address will need to be added to the masternode configuration file later on. Fetching this information now will make things a bit easier when we reach that stage. To get the transaction and output ID, go to `Help -> Debug window -> Console`. In the debug console type `masternode outputs` and the transaction and output ID will be displayed. Record these details for later use.
 
+***
 ### Part B: Creating the VPS within Vultr
 
 ***Step 1:*** 

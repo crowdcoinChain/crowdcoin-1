@@ -43,7 +43,7 @@ Run this command multiple times if you are intending to run multiple masternodes
 
 ***Step 4: Transfer 1,000 CRC to each masternode public address***
 
-To allow your remote masternode to start you need to send 1,000 CRC to each masternode address in your local wallet, as generated in *Step 3* that you intend to operate. The transaction needs to be exactly 2,500 ARTX. When you make this transaction, ensure that you factor in fees. The windows wallet will show you the total amount being deposited so ensure this reads excacly 2,500 ARTX. Just to reiterate, you need to send exactly 2,500 ARTX in a single transaction to each masternode address that you intend to operate.
+To allow your remote masternode to start you need to send 1,000 CRC to each masternode address in your local wallet, as generated in ***Step 3*** that you intend to operate. The transaction needs to be exactly ***1,000 CRC***. When you make this transaction, ensure that you factor in fees. The windows wallet will show you the total amount being deposited so ensure this reads excacly ***1,000 CRC***. Just to reiterate, you need to send exactly ***1,000 CRC*** in a **single transaction** to each masternode address that you intend to operate.
 
 ***Step 5: Record the transaction and output ID*** 
 

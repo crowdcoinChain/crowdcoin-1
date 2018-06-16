@@ -61,11 +61,10 @@ Your local wallet is not required to be kept open and you can store it as a cold
 
 ### Part B: Downloading and installing BitVise. 
 
-***Step 1***
+***Step 1:***
 * Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
-***
 
-***Step 2***
+***Step 2:***
 * Select the correct installer depending upon your operating system. Then follow the install instructions. 
 
 ![Example-PuttyInstaller](https://i.imgur.com/yF3694G.png)

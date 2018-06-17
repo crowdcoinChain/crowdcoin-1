@@ -10,6 +10,7 @@ apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
 cd $CONFIGFOLDER
 git clone https://github.com/crowdcoinChain/sentinelLinux.git /root/.crowdcoincore/sentinelLinux >/dev/null 2>&1
 cd $CONFIGFOLDER/sentinelLinux
+export LC_ALL=C >/dev/null 2>&1
 virtualenv ./venv >/dev/null 2>&1
 ./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
 

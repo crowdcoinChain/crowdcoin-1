@@ -12,16 +12,15 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * **Requirements**
 * **Part A**: Preparing the local wallet.
 * **Part B**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
-* **Part C**: Downloading and installing Putty.
-* **Part D**: Connecting to the VPS and installing the MN script via Bitvise.
-* **Part E**: Connecting & Starting the masternode.
+* **Part C**: Connecting to the vps and installing the masternode script via Putty.
+* **Part D**: Connecting & Starting the masternode.
 
 ***
 ### Requirements
 1) **1,000 CRC.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
-4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)** or **[Putty](https://putty.org)**
+4) **An SSH client such as **[Putty](https://putty.org)** or [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
 
 ***
 ### Part A: Preparing the Local wallet
@@ -91,59 +90,54 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***
 
 
-### Part C: Downloading Putty. 
-
-***Step 1:***
-* Download Putty [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
-
-***
-
-
-### Part D: Connecting to the VPS & Installing the MN script via Putty.
+### Part C: Connecting to the vps and installing the masternode script via Putty.
 
 ***Step 1***
-* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
+* Download Putty [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 ***Step 2***
-* Open Putty and fill in the "Hostname" box with the IP of your VPS.
+* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
 
 ***Step 3***
-* Copy the root password from the VULTR server page.
+* Open Putty and fill in the "Hostname" box with the IP of your VPS.
 
 ***Step 4***
+* Copy the root password from the VULTR server page.
+
+***Step 5***
 * Type "root" as the login/username.
 
-***Step 5*** 
-* Paste the password into Putty by right clicking (it will not show the password so just press enter)
-
 ***Step 6*** 
+* Paste the password into Putty by right clicking (it will not show the password so just press enter).
+
+***Step 7*** 
 * Once you have clicked open it will open a security alert (click yes).  
 
-***Step 7***
-* Paste the code below into Putty to download the script.
+***Step 8***
+* Paste the code below into Putty to download the masternode install script.
 
 `wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
 
-***Step 8***
-* Paste the code below into Putty, then press enter to start the installation.
+***Step 9***
+* Paste the code below into Putty, then press enter to start the masternode installation.
 
 `bash crowdcoin_install.sh`
 
-***Step 9***
+***Step 10***
 * Sit back and wait for the install (this will take 10-20 mins)
 
-***Step 10***
+***Step 11***
 * When prompted enter your masternode genkey and press enter
 
-***Step 11***
+***Step 12***
 * You will now see all of the relavant information for your server.
-* Keep this terminal open as we will need the info for the wallet setup.
+* Keep this terminal open as we will need the info for the local wallet setup.
 ***
 
-### Part E: Connecting & Starting the masternode 
+### Part D: Connecting & Starting the masternode 
 
 ***Step 1***
-* Go to the tools tab within the wallet and click open "masternode configuration file" 
+* Go to the tools tab within the local wallet and click open "masternode configuration file" 
 ***
 
 ***Step 2***

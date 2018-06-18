@@ -82,7 +82,7 @@ The transaction and output ID from the deposit you made into your masternode pub
 
 ***Step 6:*** 
 * Choose a server size and select a Aruba Cloud datacenter: ***Random***
-* ***Small / €1 a month***
+* ***Small 1.00 Euro/ month***
 
 ![server-size](https://i.imgur.com/WnrK06M.jpg)
 

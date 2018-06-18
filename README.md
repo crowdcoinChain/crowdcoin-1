@@ -128,7 +128,7 @@ The transaction and output ID from the deposit you made into your masternode pub
 `bash crowdcoin_install.sh`
 
 ***Step 10***
-* Sit back and wait for the install (this will take 10-20 mins)
+* Wait for the installation to finish (this will take approximately 10-20 minutes)
 
 ***Step 11***
 * When prompted enter your masternode genkey and press enter

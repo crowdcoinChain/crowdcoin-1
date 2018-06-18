@@ -11,7 +11,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ### Table of contents
 * **Requirements**
 * **Part A**: Preparing the local wallet.
-* **Part B**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
+* **Part B**: Creating the VPS within [Aruba Cloud](https://www.arubacloud.com/).
 * **Part C**: Connecting to the vps and installing the masternode script via Putty.
 * **Part D**: Connecting & Starting the masternode.
 
@@ -55,19 +55,25 @@ To allow your remote masternode to start you need to send 1,000 CRC to each mast
 The transaction and output ID from the deposit you made into your masternode public address will need to be added to the masternode configuration file later on. Fetching this information now will make things a bit easier when we reach that stage. To get the transaction and output ID, go to `Help -> Debug window -> Console`. In the debug console type `masternode outputs` and the transaction and output ID will be displayed. Record these details for later use.
 
 ***
-### Part B: Creating the VPS within Vultr
+### Part B: Creating the VPS within Aruba Cloud
 
 ***Step 1:*** 
-* Register at [Vultr](https://www.vultr.com/?ref=7296974)
+* Register at [Aruba cloud](https://www.arubacloud.com/)
 
 ***Step 2:*** 
-* After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server
+* After you have added funds to your account go [here](https://admin.dc1.arubacloud.com/Manage/Server/ServerCreation.aspx) to create your Server
+
+![server-type](https://i.imgur.com/49Zi64S.jpg)
 
 ***Step 3:*** 
-* Choose a server location (preferably somewhere close to you)
+* Set a Server Hostname (name it whatever you want)
+
+![server-hostname](https://i.imgur.com/hTRq7nY.jpg)
 
 ***Step 4:*** 
-* Choose a server type: Ubuntu 16.04
+* Choose a server template: Ubuntu Server 16.0.4 LTS 64bit
+
+![server-template](https://i.imgur.com/olzP1oZ.jpg)
 
 ***Step 5:*** 
 * Choose a server size: $5/mo will be fine

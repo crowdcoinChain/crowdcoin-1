@@ -97,9 +97,8 @@ The transaction and output ID from the deposit you made into your masternode pub
 * Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
 
 ***Step 2:***
-* Select the correct installer depending upon your operating system. Then follow the install instructions. 
+* Select the correct installer depending on your operating system. Then follow the install instructions. 
 
-![Example-PuttyInstaller](https://i.imgur.com/yF3694G.png)
 ***
 
 

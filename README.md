@@ -66,28 +66,28 @@ The transaction and output ID from the deposit you made into your masternode pub
 ![server-type](https://i.imgur.com/49Zi64S.jpg)
 
 ***Step 3:*** 
-* Set a server hostname (name it whatever you want).
+* Set a server ***hostname*** (name it whatever you want).
 
 ![server-hostname](https://i.imgur.com/hTRq7nY.jpg)
 
 ***Step 4:*** 
-* Choose a server template: Ubuntu Server 16.0.4 LTS 64bit
+* Choose a server template: ***Ubuntu Server 16.0.4 LTS 64bit***
 
 ![server-template](https://i.imgur.com/olzP1oZ.jpg)
 
 ***Step 5:*** 
-* Choose a root password.
+* Choose a ***root*** password.
 
 ![root-password](https://i.imgur.com/eUGDMj4.jpg)
 
 ***Step 6:*** 
-* Choose a server size and select a Aruba Cloud datacenter: Random
-* Small / €1 a month
+* Choose a server size and select a Aruba Cloud datacenter: ***Random***
+* ***Small / €1 a month***
 
 ![server-size](https://i.imgur.com/WnrK06M.jpg)
 
 ***Step 7:***
-* Click "Create smart cloud server" to create the server.
+* Click ***Create smart cloud server*** to create the server.
 
 ![server-create](https://i.imgur.com/W53ag8y.jpg)
 

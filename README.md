@@ -112,29 +112,29 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***Step 4***
 * Type in ***root*** as the login/username.
 
-***Step 6*** 
+***Step 5*** 
 * Type in the root password into Putty.
 
-***Step 7*** 
+***Step 6*** 
 * Once you have clicked on open it will open a security alert (click yes).  
 
-***Step 8***
+***Step 7***
 * Paste the code below into Putty to download the masternode install script.
 
 `wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
 
-***Step 9***
+***Step 8***
 * Paste the code below into Putty, then press enter to start the masternode installation.
 
 `bash crowdcoin_install.sh`
 
-***Step 10***
+***Step 9***
 * Wait for the installation to finish (this will take approximately 10-20 minutes)
 
-***Step 11***
+***Step 10***
 * When prompted enter your masternode genkey and press enter. (you can copy/paste this information from your local wallet)
 
-***Step 12***
+***Step 11***
 * You will now see all of the relavant information for your server.
 * Keep this terminal open as we will need the info for the local wallet setup.
 ***

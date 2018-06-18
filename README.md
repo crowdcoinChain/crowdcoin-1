@@ -108,53 +108,41 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***Step 1***
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
 ![Example-Vultr](https://i.imgur.com/z41MiwY.png)
-***
 
 ***Step 2***
 * Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
 ![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
-***
 
 ***Step 3***
 * Copy the root password from the VULTR server page.
 ![Example-RootPass](https://i.imgur.com/JnXQXav.png)
-***
 
 ***Step 4***
 * Type "root" as the login/username.
 ![Example-Root](https://i.imgur.com/11GMkvA.png)
-***
 
 ***Step 5*** 
 * Paste the password into the Bitvise terminal by right clicking (it will not show the password so just press enter)
 ![Example-RootPassEnter](https://i.imgur.com/zVhOAKu.png)
-***
 
 ***Step 6*** 
 * Once you have clicked open it will open a security alert (click yes).  
-***
 
 ***Step 7***
 * Paste the code below into the Bitvise terminal to download the script.
 
 `wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
-***
 
 ***Step 8***
 * Paste the code below into the Bitvise terminal then press enter to start the installation.
 
 `bash crowdcoin_install.sh`
 
-***
-
 ***Step 9***
 * Sit back and wait for the install (this will take 10-20 mins)
-***
 
 ***Step 10***
 * When prompted enter your masternode genkey and press enter
-
-***
 
 ***Step 11***
 * You will now see all of the relavant information for your server.

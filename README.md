@@ -135,14 +135,13 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***
 
 ***Step 7***
-* Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
-![Example-RootPassEnter](https://i.imgur.com/K6xlnav.png)
+* Paste the code below into the Bitvise terminal to download the script.
 
 `wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
 ***
 
 ***Step 8***
-* Paste the code below into the Bitvise terminal then press enter
+* Paste the code below into the Bitvise terminal then press enter to start the installation.
 
 `bash crowdcoin_install.sh`
 
@@ -172,8 +171,8 @@ The transaction and output ID from the deposit you made into your masternode pub
 
 * Fill in the form. 
 * For `Alias` type something like "MN01" **don't use spaces**
-* The `Address` is the IP and port of your server (this will be in the Bitvise terminal that you still have open).
-* The `PrivKey` is your masternode Gen key (This is also in the Bitvise terminal that you have open).
+* The `Address` is the IP and port of your server.
+* The `PrivKey` is your masternode genkey.
 * The `TxHash` is the transaction ID/long key that you copied to the text file.
 * The `Output Index` is the 0 or 1 that you copied to your text file.
 
@@ -183,7 +182,7 @@ Click "File Save"
 ***Step 3***
 * Close out of the wallet and reopen Wallet
 *Click on the Masternodes tab "My masternodes"
-* Click start all in the masternodes tab
+* Click start alias or start all in the masternodes tab
 ***
 
 ***step 4***
@@ -191,6 +190,4 @@ Click "File Save"
 
 `crowdcoin-cli masternode status`
 
-*You should see ***status 9***
-
-If you do, congratulations! You have now setup a masternode. If you do not, please contact support and they will assist you.  
+*You should see ***status 9*** 

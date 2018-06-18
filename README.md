@@ -142,7 +142,6 @@ The transaction and output ID from the deposit you made into your masternode pub
 
 ***Step 1***
 * Go to the tools tab within the local wallet and click open "masternode configuration file" 
-***
 
 ***Step 2***
 
@@ -154,13 +153,11 @@ The transaction and output ID from the deposit you made into your masternode pub
 * The `Output Index` is the 0 or 1 that you copied to your text file.
 
 Click "File Save"
-***
 
 ***Step 3***
 * Close out of the wallet and reopen Wallet
 *Click on the Masternodes tab "My masternodes"
 * Click start alias or start all in the masternodes tab
-***
 
 ***Step 4***
 * Check the status of your masternode within the VPS by using the command below:

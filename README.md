@@ -58,15 +58,15 @@ The transaction and output ID from the deposit you made into your masternode pub
 ### Part B: Creating the VPS within Aruba Cloud
 
 ***Step 1:*** 
-* Register at [Aruba cloud](https://www.arubacloud.com/)
+* Register at [Aruba cloud](https://www.arubacloud.com/).
 
 ***Step 2:*** 
-* After you have added funds to your account go [here](https://admin.dc1.arubacloud.com/Manage/Server/ServerCreation.aspx) to create your Server
+* After you have added funds to your account go [here](https://admin.dc1.arubacloud.com/Manage/Server/ServerCreation.aspx) to create your Server.
 
 ![server-type](https://i.imgur.com/49Zi64S.jpg)
 
 ***Step 3:*** 
-* Set a server hostname (name it whatever you want)
+* Set a server hostname (name it whatever you want).
 
 ![server-hostname](https://i.imgur.com/hTRq7nY.jpg)
 
@@ -76,18 +76,18 @@ The transaction and output ID from the deposit you made into your masternode pub
 ![server-template](https://i.imgur.com/olzP1oZ.jpg)
 
 ***Step 5:*** 
-* Choose a root password
+* Choose a root password.
 
 ![root-password](https://i.imgur.com/eUGDMj4.jpg)
 
 ***Step 6:*** 
 * Choose a server size and select a Aruba Cloud datacenter: Random
-* small / €1 a month
+* Small / €1 a month
 
 ![server-size](https://i.imgur.com/WnrK06M.jpg)
 
 ***Step 7:***
-* Click "Create smart cloud server"
+* Click "Create smart cloud server" to create the server.
 
 ![server-create](https://i.imgur.com/W53ag8y.jpg)
 

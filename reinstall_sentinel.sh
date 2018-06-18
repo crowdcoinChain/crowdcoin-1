@@ -20,8 +20,8 @@ touch $CONFIGFOLDER/sentinel/sentinel.conf >/dev/null 2>&1
 cat << EOF > $CONFIGFOLDER/sentinel/sentinel.conf
 # specify path to dash.conf or leave blank
 # default is the same as DashCore
-#dash_conf=/root/.crowdcoincore/crowdcoin.conf
-crowd_conf=/root/.crowdcoincore/crowdcoin.conf
+dash_conf=/root/.crowdcoincore/crowdcoin.conf
+#crowd_conf=/root/.crowdcoincore/crowdcoin.conf
 
 # valid options are mainnet, testnet (default=mainnet)
 network=mainnet

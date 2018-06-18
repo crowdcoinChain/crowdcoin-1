@@ -149,7 +149,7 @@ Click "File Save"
 * Click start alias or start all in the masternodes tab
 ***
 
-***step 4***
+***Step 4***
 * Check the status of your masternode within the VPS by using the command below:
 
 `crowdcoin-cli masternode status`

@@ -110,16 +110,13 @@ The transaction and output ID from the deposit you made into your masternode pub
 ![putty-hostname](https://i.imgur.com/6kKzDEQ.jpg)
 
 ***Step 4***
-* Copy the root password from the VULTR server page.
-
-***Step 5***
-* Type "root" as the login/username.
+* Type in ***root*** as the login/username.
 
 ***Step 6*** 
-* Paste the password into Putty by right clicking (it will not show the password so just press enter).
+* Type in the root password into Putty.
 
 ***Step 7*** 
-* Once you have clicked open it will open a security alert (click yes).  
+* Once you have clicked on open it will open a security alert (click yes).  
 
 ***Step 8***
 * Paste the code below into Putty to download the masternode install script.
@@ -135,7 +132,7 @@ The transaction and output ID from the deposit you made into your masternode pub
 * Wait for the installation to finish (this will take approximately 10-20 minutes)
 
 ***Step 11***
-* When prompted enter your masternode genkey and press enter
+* When prompted enter your masternode genkey and press enter. (you can copy/paste this information from your local wallet)
 
 ***Step 12***
 * You will now see all of the relavant information for your server.

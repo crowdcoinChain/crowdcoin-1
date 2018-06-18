@@ -12,7 +12,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * **Requirements**
 * **Part A**: Preparing the local wallet.
 * **Part B**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
-* **Part C**: Downloading and installing Bitvise.
+* **Part C**: Downloading and installing Putty.
 * **Part D**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Part E**: Connecting & Starting the masternode.
 
@@ -91,49 +91,41 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***
 
 
-### Part C: Downloading and installing BitVise. 
+### Part C: Downloading Putty. 
 
 ***Step 1:***
-* Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
-
-***Step 2:***
-* Select the correct installer depending on your operating system. Then follow the install instructions. 
+* Download Putty [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 ***
 
 
-### Part D: Connecting to the VPS & Installing the MN script via Bitvise.
+### Part D: Connecting to the VPS & Installing the MN script via Putty.
 
 ***Step 1***
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
-![Example-Vultr](https://i.imgur.com/z41MiwY.png)
 
 ***Step 2***
-* Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
-![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
+* Open Putty and fill in the "Hostname" box with the IP of your VPS.
 
 ***Step 3***
 * Copy the root password from the VULTR server page.
-![Example-RootPass](https://i.imgur.com/JnXQXav.png)
 
 ***Step 4***
 * Type "root" as the login/username.
-![Example-Root](https://i.imgur.com/11GMkvA.png)
 
 ***Step 5*** 
-* Paste the password into the Bitvise terminal by right clicking (it will not show the password so just press enter)
-![Example-RootPassEnter](https://i.imgur.com/zVhOAKu.png)
+* Paste the password into Putty by right clicking (it will not show the password so just press enter)
 
 ***Step 6*** 
 * Once you have clicked open it will open a security alert (click yes).  
 
 ***Step 7***
-* Paste the code below into the Bitvise terminal to download the script.
+* Paste the code below into Putty to download the script.
 
 `wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
 
 ***Step 8***
-* Paste the code below into the Bitvise terminal then press enter to start the installation.
+* Paste the code below into Putty, then press enter to start the installation.
 
 `bash crowdcoin_install.sh`
 

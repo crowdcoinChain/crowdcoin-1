@@ -113,26 +113,26 @@ The transaction and output ID from the deposit you made into your masternode pub
 * Type in ***root*** as the login/username.
 
 ***Step 5*** 
-* Type in the root password into Putty.
+* Type in the root ***password*** into Putty.
 
 ***Step 6*** 
-* Once you have clicked on open it will open a security alert (click yes).  
+* Once you have clicked on open it will open a security alert: click ***yes***.  
 
 ***Step 7***
-* Paste the code below into Putty to download the masternode install script.
+* Paste the code below into Putty to ***download*** the masternode install script.
 
 `wget -q https://raw.githubusercontent.com/ronaldr1987/crowdcoin/master/crowdcoin_install.sh`
 
 ***Step 8***
-* Paste the code below into Putty, then press enter to start the masternode installation.
+* Paste the code below into Putty, then press ***enter*** to start the masternode installation.
 
 `bash crowdcoin_install.sh`
 
 ***Step 9***
-* Wait for the installation to finish (this will take approximately 10-20 minutes)
+* Wait for the installation to ***finish*** (this will take approximately 10-20 minutes)
 
 ***Step 10***
-* When prompted enter your masternode genkey and press enter. (you can copy/paste this information from your local wallet)
+* When prompted enter your ***masternode genkey*** and press ***enter***. (you can copy/paste this information from your local wallet)
 
 ***Step 11***
 * You will now see all of the relavant information for your server.
@@ -142,7 +142,7 @@ The transaction and output ID from the deposit you made into your masternode pub
 ### Part D: Connecting & Starting the masternode 
 
 ***Step 1***
-* Go to the tools tab within the local wallet and click open "masternode configuration file" 
+* Go to the tools tab within the local wallet and click on ***open masternode configuration file*** 
 
 ***Step 2***
 
@@ -153,12 +153,12 @@ The transaction and output ID from the deposit you made into your masternode pub
 * The `TxHash` is the transaction ID/long key that you copied to the text file.
 * The `Output Index` is the 0 or 1 that you copied to your text file.
 
-Click "File Save"
+Click ***File - Save***
 
 ***Step 3***
-* Close out of the wallet and reopen Wallet
+* Close your wallet and restart it.
 
-Go to the Masternodes tab and inside that to the My Masternodes tab, select your new masternode and click Start alias and it's status should change to Pre-Enabled. If you see Watchdog Expired don't worry, it takes a little for sentinel to send the correct status.
+Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias*** and it's status should change to ***Pre-Enabled***. If you see ***Watchdog Expired*** don't worry, it takes a little for sentinel to send the correct status.
 
 ***Step 4***
 * Check the status of your masternode within the VPS by using the command below:

@@ -102,10 +102,12 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***Step 2***
 * Copy your VPS IP (you can find this information in your Aruba Cloud control panel.
 
-![server-ip](https://i.imgur.com/896q0Kw.jpg)
+![putty-ip](https://i.imgur.com/896q0Kw.jpg)
 
 ***Step 3***
-* Open Putty and fill in the "Hostname" box with the IP of your VPS.
+* Open Putty and fill in the ***hostname*** box with the IP of your VPS.
+
+![putty-hostname](https://i.imgur.com/6kKzDEQ.jpg)
 
 ***Step 4***
 * Copy the root password from the VULTR server page.

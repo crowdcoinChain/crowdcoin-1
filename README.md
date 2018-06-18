@@ -157,8 +157,8 @@ Click "File Save"
 
 ***Step 3***
 * Close out of the wallet and reopen Wallet
-*Click on the Masternodes tab "My masternodes"
-* Click start alias or start all in the masternodes tab
+
+Go to the Masternodes tab and inside that to the My Masternodes tab, select your new masternode and click Start alias and it's status should change to Pre-Enabled. If you see Watchdog Expired don't worry, it takes a little for sentinel to send the correct status.
 
 ***Step 4***
 * Check the status of your masternode within the VPS by using the command below:

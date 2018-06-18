@@ -16,7 +16,6 @@ SENTINEL_REPO='https://github.com/crowdcoinChain/sentinelLinux.git'
 COIN_NAME='crowdcoin'
 COIN_PORT=12875
 RPC_PORT=11998
-
 NODEIP=$(curl -s4 icanhazip.com)
 
 BLUE="\033[0;34m"

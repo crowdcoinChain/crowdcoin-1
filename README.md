@@ -18,9 +18,9 @@ Your local wallet is not required to be kept open and you can store it as a cold
 ***
 ### Requirements
 1) **1,000 CRC.**
-2) **A Vultr VPS running Linux Ubuntu 16.04.**
-3) **A Windows local wallet.**
-4) **An SSH client such as **[Putty](https://putty.org)** or [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
+2) **VPS running Linux Ubuntu 16.04.**
+3) **Windows local wallet.**
+4) **SSH client such as **[Putty](https://putty.org)** or [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
 
 ***
 ### Part A: Preparing the Local wallet
@@ -100,7 +100,9 @@ The transaction and output ID from the deposit you made into your masternode pub
 * Download Putty [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 ***Step 2***
-* Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
+* Copy your VPS IP (you can find this information in your Aruba Cloud control panel.
+
+![server-ip](https://i.imgur.com/896q0Kw.jpg)
 
 ***Step 3***
 * Open Putty and fill in the "Hostname" box with the IP of your VPS.

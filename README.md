@@ -61,7 +61,7 @@ The transaction and output ID from the deposit you made into your masternode pub
 * Register at [Aruba cloud](https://www.arubacloud.com/).
 
 ***Step 2:*** 
-* After you have added funds to your account go [here](https://admin.dc1.arubacloud.com/Manage/Server/ServerCreation.aspx) to create your Server.
+* After you have added funds to your account go [here](https://admin.dc1.arubacloud.com/Manage/Server/ServerCreation.aspx) to create your server.
 
 ![server-type](https://i.imgur.com/49Zi64S.jpg)
 

@@ -150,11 +150,11 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***Step 2***
 
 * Fill in the form. 
-* For `Alias` type something like "MN01" **don't use spaces**
-* The `Address` is the IP and port of your server.
-* The `PrivKey` is your masternode genkey.
-* The `TxHash` is the transaction ID/long key that you copied to the text file.
-* The `Output Index` is the 0 or 1 that you copied to your text file.
+* For `ALIAS` type something like "MN01" **don't use spaces**
+* The `IP` is the IP and port of your server.
+* The `GENKEY` is your masternode genkey.
+* The `TX` is the transaction ID/long key that you copied from the `masternode outputs` result. 
+* The `ID` is the 0 or 1 from the `masternode outputs` result. 
 
 Click ***File - Save***
 

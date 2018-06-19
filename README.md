@@ -155,7 +155,8 @@ The transaction and output ID from the deposit you made into your masternode pub
 
 Click ***File - Save***
 
-***Example:***
+***Example***
+
 ![mn-config](https://i.imgur.com/3j115NN.jpg)
 
 ***Step 3***

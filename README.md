@@ -150,11 +150,16 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***Step 2***
 
 * Fill in the form. 
-* For `ALIAS` type something like "MN01" **don't use spaces**
-* The `IP` is the IP and port of your server.
-* The `GENKEY` is your masternode genkey.
-* The `TX` is the transaction ID/long key that you copied from the `masternode outputs` result. 
-* The `ID` is the 0 or 1 from the `masternode outputs` result. 
+`ALIAS` : Any name can be given 
+`IP`    : The external IP address of your remote VPS.  
+`GENKEY`: The key you generated earlier when typing masternode genkey
+ in the debug console.
+`TX`    : The long alphanumerical string when typing masternode outputs
+ in the debug console.
+`ID`    : The small number when typing masternode outputs in the debug
+console. 
+
+is the 0 or 1 from the `masternode outputs` result. 
 
 Click ***File - Save***
 

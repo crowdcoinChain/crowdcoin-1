@@ -203,7 +203,6 @@ Confirm that Sentinel is installed on your server. If so, is this your very firs
 
 ***Q5: My masternode status is: NEW_START_REQUIRED***
 
-A restart is most likely needed.
 Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias***
 
 ***Q6: My masternode status is: MISSING***
@@ -211,3 +210,20 @@ Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab,
 Either your wallet is not synchronized yet or a restart is required.
 Note that even a dedicated server can go down from time to time. When this happens you need to restart your masternode. Also make sure you do not accidentally send any of the ***1000 CRC*** locked into your masternode, as that will disable it, forcing you to start over.
 
+***Q7: My masternode is stuck on block 'xxx', how can i perform a reindex?***
+
+`systemctl stop crowdcoin.service`
+`crowdcoind -daemon -reindex`
+`crowdcoin-cli getinfo` (make sure blocks are increasing)
+
+Check the sync status with:
+
+`crowdcoin-cli mnsync status`
+
+It should return: MASTERNODE_SYNC_FINISHED
+
+Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias***
+
+***Q8: How many coins will i receive per day/week/month ?***
+
+You can check all the current stats at https://masternodes.online/

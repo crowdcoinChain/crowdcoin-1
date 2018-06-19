@@ -184,6 +184,7 @@ You should now see ***Masternode successfully started***
 ### Part E: Frequently Asked Questions
 
 ***I’ve installed the Crowdcoin wallet, but where are my wallet data files?***
+
 The default directory where your wallet data files will be stored is    
 `C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`
 

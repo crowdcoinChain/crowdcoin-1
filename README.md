@@ -190,7 +190,15 @@ The default directory where your wallet data files will be stored is
 
 ***I have 1001 CRC, why is my masternode outputs blank?***
 
-You need to create a new address in your wallet, label it, and send EXACTLY ***1000 CRC*** to your new address. Do NOT check the box that says "Subtract fee from amount"
+You need to create a new address in your wallet, label it, and send EXACTLY ***1000 CRC*** to your new address. Do NOT check the box that says ***Subtract fee from amount***
 
 ***How do i enable the masternodes tab?***
+
 `Settings - Options - Wallets - Show Masternodes Tab`
+
+My masternode status is X. What do I do?
+
+Always confirm your wallet is up to date and synchronized first. Common status messages are as follows and what to do:
+
+`WATCHDOG_EXPIRED` 
+Confirm that Sentinel is installed on your server. If so, is this your very first reward cycle? Try waiting until the first payout. If it occurs again be aware that even in this status it should still be collecting rewards and will eventually correct itself.

@@ -137,6 +137,9 @@ The transaction and output ID from the deposit you made into your masternode pub
 ***Step 11***
 * You will now see all of the relavant information for your server.
 * Keep this terminal open as we will need the info for the local wallet setup.
+
+![mn-finished](https://i.imgur.com/PqN0Z2o.jpg)
+
 ***
 
 ### Part D: Connecting & Starting the masternode 

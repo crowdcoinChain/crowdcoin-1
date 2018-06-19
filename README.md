@@ -14,6 +14,7 @@ Your local wallet is not required to be kept open and you can store it as a cold
 * **Part B**: Creating the VPS within [Aruba Cloud](https://www.arubacloud.com/).
 * **Part C**: Connecting to the vps and installing the masternode script via Putty.
 * **Part D**: Connecting & Starting the masternode.
+* **Part E**: Frequently Asked Questions
 
 ***
 ### Requirements
@@ -179,3 +180,10 @@ Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab,
 You should now see ***Masternode successfully started*** 
 
 ![mn-started](https://i.imgur.com/mm3MM9q.jpg)
+
+***
+
+### Part E: Frequently Asked Questions
+
+***I’ve installed the Crowdcoin wallet, but where are my wallet data files?***
+* C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore

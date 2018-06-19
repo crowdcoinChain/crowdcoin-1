@@ -186,4 +186,8 @@ You should now see ***Masternode successfully started***
 ### Part E: Frequently Asked Questions
 
 ***I’ve installed the Crowdcoin wallet, but where are my wallet data files?***
-* C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore
+`C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`
+
+***I have 1001 CRC, why is my masternode outputs blank?***
+
+You need to create a new address in your wallet, label it, and send EXACTLY ***1000 CRC*** to your new address. Do NOT check the box that says "Subtract fee from amount"

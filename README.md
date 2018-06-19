@@ -165,4 +165,4 @@ Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab,
 
 `crowdcoin-cli masternode status`
 
-*You should see ***status 9*** 
+*You should now see: ***Masternode successfully started*** 

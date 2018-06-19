@@ -149,17 +149,16 @@ The transaction and output ID from the deposit you made into your masternode pub
 
 ***Step 2***
 
-* Fill in the form. 
+Create a new rule for your masternode:
+ 
 * `ALIAS` : Any name can be given 
 * `IP`    : The external IP address of your remote VPS.  
 * `GENKEY`: The key you generated earlier when typing masternode genkey
  in the debug console.
 * `TX`    : The long alphanumerical string when typing masternode outputs
  in the debug console.
-* `ID`    : The small number when typing masternode outputs in the debug
+* `ID`    : The small number (0/1) when typing masternode outputs in the debug
 console. 
-
-is the 0 or 1 from the `masternode outputs` result. 
 
 Click ***File - Save***
 
@@ -170,7 +169,7 @@ Click ***File - Save***
 ***Step 3***
 * Close your wallet and restart it.
 
-Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias*** and it's status should change to ***Pre-Enabled***. If you see ***Watchdog Expired*** don't worry, it takes a little for sentinel to send the correct status.
+Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias*** and it's status should change to ***PRE-ENABLED***. If you see ***WATCHDOG_EXPIRED*** don't worry, it takes a little for sentinel to send the correct status.
 
 ***Step 4***
 * Check the status of your masternode within the VPS by using the command below:

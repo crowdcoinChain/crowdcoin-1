@@ -34,8 +34,6 @@ Download the Crowdcoin wallet from our [Official website](https://crowdcoin.site
 
 Start the Crowdcoin wallet !
 
-:exclamation: The default directory where your data and wallet.dat will be stored is `C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`
-
 ***Step 3: Create masternode public address*** 
 
 Depending on the number of masternodes you will be running, you will want to create a unique receiving address for each. A receiving address can be created in the wallet by selecting `File - Receiving addresses` in the menu the wallet. Select `New` and click on ***OK*** to create a new receiving address. Create a new address for each masternode that you intend to run.
@@ -186,8 +184,12 @@ You should now see ***Masternode successfully started***
 ### Part E: Frequently Asked Questions
 
 ***I’ve installed the Crowdcoin wallet, but where are my wallet data files?***
+The default directory where your wallet data files will be stored is 
 `C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`
 
 ***I have 1001 CRC, why is my masternode outputs blank?***
 
 You need to create a new address in your wallet, label it, and send EXACTLY ***1000 CRC*** to your new address. Do NOT check the box that says "Subtract fee from amount"
+
+***How do i enable the masternodes tab?***
+`Settings - Options - Wallets - Show Masternodes Tab`

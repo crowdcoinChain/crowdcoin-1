@@ -183,30 +183,30 @@ You should now see ***Masternode successfully started***
 
 ### Part E: Frequently Asked Questions
 
-***I’ve installed the Crowdcoin wallet, but where are my wallet data files?***
+***Q1: I’ve installed the Crowdcoin wallet, but where are my wallet data files?***
 
 The default directory where your wallet data files will be stored is    
 `C:\Users\YOUR_USERNAME\AppData\Roaming\Crowdcoincore`
 
-***I have 1001 CRC, why is my masternode outputs blank?***
+***Q2: I have 1001 CRC, why is my masternode outputs blank?***
 
 You need to create a new address in your wallet, label it, and send EXACTLY ***1000 CRC*** to your new address. Do NOT check the box that says ***Subtract fee from amount***
 
-***How do i enable the masternodes tab?***
+***Q3: How do i enable the masternodes tab?***
 
 `Settings - Options - Wallets - Show Masternodes Tab`
 
-***My masternode status is: WATCHDOG_EXPIRED***
+***Q4: My masternode status is: WATCHDOG_EXPIRED***
 
 Always confirm your wallet is up to date and synchronized first.
 Confirm that Sentinel is installed on your server. If so, is this your very first reward cycle? Try waiting until the first payout. If it occurs again be aware that even in this status it should still be collecting rewards and will eventually correct itself.
 
-***My masternode status is: NEW_START_REQUIRED***
+***Q5: My masternode status is: NEW_START_REQUIRED***
 
 A restart is most likely needed.
 Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias***
 
-***My masternode status is: MISSING***
+***Q6: My masternode status is: MISSING***
 
 Either your wallet is not synchronized yet or a restart is required.
 Note that even a dedicated server can go down from time to time. When this happens you need to restart your masternode. Also make sure you do not accidentally send any of the ***1000 CRC*** locked into your masternode, as that will disable it, forcing you to start over.

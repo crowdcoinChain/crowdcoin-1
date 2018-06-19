@@ -222,9 +222,8 @@ Check the sync status with:
 
 `crowdcoin-cli mnsync status`
 
-It should return: MASTERNODE_SYNC_FINISHED
+You should now see ***MASTERNODE_SYNC_FINISHED***
 
-Go to the ***Masternodes*** tab and inside that to the ***My Masternodes*** tab, select your new masternode and click on ***Start alias***
 
 ***Q8: How many coins will i receive per day/week/month ?***
 

@@ -213,7 +213,9 @@ Note that even a dedicated server can go down from time to time. When this happe
 ***Q7: My masternode is stuck on block 'xxx', how can i perform a reindex?***
 
 `systemctl stop crowdcoin.service`
+
 `crowdcoind -daemon -reindex`
+
 `crowdcoin-cli getinfo` (make sure blocks are increasing)
 
 Check the sync status with:
